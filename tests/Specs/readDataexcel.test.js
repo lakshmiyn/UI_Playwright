@@ -16,6 +16,7 @@ test('Read data from excel sheet', async({}) => {
 test('reading userName and pasword rows wise and try to login into', async({page}) => {
     rows = readRows();
     const dataJson = JSON.stringify(rows);
+    console.log("data: " + dataJson);
      let parsedData= JSON.parse(dataJson);
     //console.log("data: " + JSON.stringify(dataJson));    ;
     console.log("data111 : " + parsedData[0].UserName, parsedData
